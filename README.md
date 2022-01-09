@@ -1,2 +1,2 @@
 # Calculator
-Simple calculator .
+It is simple calculator code which I created on Andriod Studio.
