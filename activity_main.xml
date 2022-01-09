@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+   >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="56dp"
+        android:textColor="#66ffcc"
+        android:text="0"
+        android:id="@+id/inputbox"
+        android:gravity="right"
+        />
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40pt"
+            android:textSize="38sp"
+            android:text="C"
+            android:id="@+id/btAC"
+            android:onClick="cleanInput"
+            android:layout_weight="1"
+            android:backgroundTint="#66ffcc"
+            android:layout_marginRight="1pt"
+           />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40pt"
+            android:textSize="38sp"
+            android:text="x!"
+            android:id="@+id/btfactorial"
+            android:backgroundTint="#66ffcc"
+            android:layout_marginRight="1pt"
+            android:onClick="factorial"
+            android:layout_weight="1"
+
+           />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40pt"
+            android:textSize="38sp"
+            android:text="%"
+            android:id="@+id/btpercent"
+            android:layout_marginRight="1pt"
+            android:onClick="percentfind"
+            android:backgroundTint="#66ffcc"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40pt"
+            android:textSize="38sp"
+            android:text="/"
+            android:layout_marginRight="1pt"
+            android:id="@+id/btdivide"
+            android:backgroundTint="#66ffcc"
+            android:onClick="getOperator"
+            android:layout_weight="1"
+            />
+
+
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40pt"
+            android:textSize="38sp"
+            android:text="7"
+            android:id="@+id/bt7"
+            android:onClick="getNumbers"
+            android:layout_weight="1"
+            android:layout_marginRight="1pt"
+            android:backgroundTint="#66ffcc"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40pt"
+            android:textSize="38sp"
+            android:text="8"
+            android:id="@+id/bt8"
+            android:layout_marginRight="1pt"
+            android:onClick="getNumbers"
+            android:layout_weight="1"
+            android:backgroundTint="#66ffcc"
+
+            />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40pt"
+            android:textSize="38sp"
+            android:text="9"
+            android:id="@+id/bt9"
+            android:layout_marginRight="1pt"
+            android:onClick="getNumbers"
+            android:layout_weight="1"
+            android:backgroundTint="#66ffcc"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40pt"
+            android:textSize="38sp"
+            android:text="x"
+            android:layout_marginRight="1pt"
+            android:id="@+id/btmultiply"
+            android:onClick="getOperator"
+            android:layout_weight="1"
+            android:backgroundTint="#66ffcc"
+            />
+
+
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40pt"
+            android:textSize="38sp"
+            android:text="4"
+            android:id="@+id/bt4"
+            android:onClick="getNumbers"
+            android:layout_weight="1"
+            android:layout_marginRight="1pt"
+            android:backgroundTint="#66ffcc"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40pt"
+            android:textSize="38sp"
+            android:text="5"
+            android:id="@+id/bt5"
+            android:layout_marginRight="1pt"
+            android:onClick="getNumbers"
+            android:layout_weight="1"
+            android:backgroundTint="#66ffcc"
+
+            />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40pt"
+            android:textSize="38sp"
+            android:text="6"
+            android:id="@+id/bt6"
+            android:layout_marginRight="1pt"
+            android:onClick="getNumbers"
+            android:layout_weight="1"
+            android:backgroundTint="#66ffcc"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40pt"
+            android:textSize="38sp"
+            android:text="-"
+            android:layout_marginRight="1pt"
+            android:id="@+id/btminus"
+            android:onClick="getOperator"
+            android:layout_weight="1"
+            android:backgroundTint="#66ffcc"
+            />
+
+
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40pt"
+            android:textSize="38sp"
+            android:text="1"
+            android:backgroundTint="#66ffcc"
+            android:id="@+id/bt1"
+            android:onClick="getNumbers"
+            android:layout_weight="1"
+            android:layout_marginRight="1pt"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40pt"
+            android:textSize="38sp"
+            android:text="2"
+            android:id="@+id/bt2"
+            android:layout_marginRight="1pt"
+            android:onClick="getNumbers"
+            android:layout_weight="1"
+            android:backgroundTint="#66ffcc"
+            />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40pt"
+            android:textSize="38sp"
+            android:text="3"
+            android:id="@+id/bt3"
+            android:layout_marginRight="1pt"
+            android:onClick="getNumbers"
+            android:layout_weight="1"
+            android:backgroundTint="#66ffcc"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40pt"
+            android:textSize="38sp"
+            android:text="+"
+            android:layout_marginRight="1pt"
+            android:id="@+id/btplus"
+            android:onClick="getOperator"
+            android:layout_weight="1"
+            android:backgroundTint="#66ffcc"
+            />
+
+<!--table-->
+    </TableRow>
+
+</TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40pt"
+            android:id="@+id/bt0"
+            android:text="0"
+            android:textSize="38sp"
+            android:onClick="getNumbers"
+            android:layout_marginRight="1pt"
+            android:layout_weight="1"
+            android:backgroundTint="#66ffcc"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40pt"
+            android:id="@+id/btdot"
+            android:text="."
+            android:onClick="cleanInput"
+            android:layout_weight="1"
+            android:layout_marginRight="1pt"
+            android:textSize="38sp"
+            android:backgroundTint="#66ffcc"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40pt"
+            android:id="@+id/btequal"
+            android:text="="
+            android:onClick="equaloperator"
+            android:layout_weight="1"
+            android:layout_marginRight="1pt"
+            android:textSize="38sp"
+            android:backgroundTint="#66ffcc"
+            />
+
+
+</LinearLayout>
+</LinearLayout>
